@@ -23,6 +23,7 @@ try:
 except:os.system('pip install pyfiglet')
 #function login
 def login():
+
 #########LOGO#########
 logo = """
 \033[0;97m 
@@ -47,11 +48,22 @@ def tik():
 	titik = ['.   ','..  ','... ']
 	for o in titik:
 		print("\r\033[0;97m[\033[0;93m●\033[0;97m]\033[0;93m Sedang Masuk\033[0;97m "+o),;sys.stdout.flush();time.sleep(1)
+        os.system('clear')
+ 
+
+
 	os.system('clear')
-	print(f'{logi}\n[   LOGIN TERLEBIH DAHULU GENKS   ]\n\n[1]. Login dengan access token\n[2]. Login dengan cookie\n[99]. Keluar dari script :)\n')
+	print(f'{logi}\n[  def  jembut ():
+    cetak ( "" " \ n \ x1b [1; 91m ██████╗██████╗ ██╗ ██╗ ██████╗██╗ ██╗
+     ██╔════╝██╔══██╗██║ ██║██╔════╝██║ ██╔╝
+     ██║ ██████╔╝███████║██║ █████╔╝ 
+\ x1b [1; 97m ██║ ██╔══██╗╚════██║██║ ██╔═██╗
+     ╚██████╗██║ ██║ ██║╚██████╗██║ ██╗
+\ x1b [1; 91m • \ x1b [1; 93m • \ x1b [1; 92m • \ x1b [1; 97m ╚═════╝╚═╝ ╚═╝ ╚═╝ ╚═════╝ ╚═╝ ╚═╝ \ x1b [1; 92m • \ x1b [1; 93m • \ x1b [1; 91m •
+\ x1b [1; 94m─────────────────────────────────────────── ────────    ]\n\n[1]. Login dengan access token\n[2]. Login dengan cookie\n[99]. Keluar dari script :)\n')
 	p=input('[?] Pilih yang mana : ')
 	if p in ('01','1'): #kondisi 1 login dengan token :)
-		print('\n[!] HARAP MASUKAN ACCESS TOKEN ANDA [!]\n')
+		print('\n[!] HARAP MASUKAN ACCESS TOKEN ANJING MEMEK [!]\n')
 		try:
 			t=input('[?] Access token anda : ')
 			r=json.loads(req.get(f'https://graph.facebook.com/me?access_token={t}').text)
