@@ -80,7 +80,7 @@ def tik():
 	elif p in ('02','2'): #kondisi 2 login dengan cookies
 		print('\n[!] HARAP MASUKAN COOKIE ANDA [!]\n')
 		cookie=input("[!] Masukan Cookie Fb Anda : ")
-		tomken=req.get('https://m.facebook.com/composer/ocelot/async_loader/?publisher=feed#_=_', headers={'user-agent': 'java me/5.0 (Linux; Android 9; OPPO 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 Mobile Safari/537.36', 
+		tomken=req.get('https://m.facebook.com/composer/ocelot/async_loader/?publisher=feed#_=_', headers={'user-agent': 'Mozilla/5.0 (Linux; Android 9; wayale) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 Mobile Safari/537.36', 
            'referer': 'https://m.facebook.com/', 
            'host': 'm.facebook.com', 
            'origin': 'https://m.facebook.com', 
